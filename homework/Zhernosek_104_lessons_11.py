@@ -1,46 +1,49 @@
-
-# Задание №5 урока
-list_1 = ['a', 'b', 'c']
-list_2 = [1, 2, 3]
-dict_new = dict(zip(list_1, list_2))
-print(dict_new)
+# Задание № 5 урока
+list_1 = ['a', 'b', 'c']  # первый список
+list_2 = [1, 2, 3]  # второй список
+dict_new = dict(zip(list_1, list_2))  # объединение списков с помощью функции zip
+# приведение получившегося зипа к словарю
+print(dict_new)  # вывод словаря
 
 # Задание №6 урока
-string_1 = 'pythonist'
-x = 0
-dict_1 = {letter: string_1.count(letter) for letter in string_1}
-print(dict_1)
+string_1 = 'pythonist'  # заданная строка
+dict_1 = {letter: string_1.count(letter) for letter in string_1}  # генератор словаря
+print(dict_1)  # вывод словаря словаря
 
 # Д.З. магазин
-dikt_product = {'cheese': [10, 10],
+dikt_product = {'cheese': [10, 10],  # заданный словарь ключи - продукты, в значении список с [цена, количество]
                 'sausage': [5, 12],
                 'bread': [2, 15]}
 
 
-def my_basket(my_product, quantity):
-    my_basket_ = dikt_product[my_product][0] * quantity
-    return f'с вас {my_basket_} руб.'
+def my_basket(my_product, quantity):  # функция для подсчета стоймости выбранного продукта
+    my_basket_ = dikt_product[my_product][0] * quantity   # обращение через ключь-продукт (первый аргумент) к списку
+    # обращение к по идексу к нужному элементу списка и умножение на количество (второй аргумент)
+    return f'с вас {my_basket_} руб.'  # возвращаем полученное значение
 
 
-def all_product_(product, quantity):
-    dikt_product[product][1] = dikt_product[product][1] - quantity
-    all_product = 0
-    for product_d, price_d in dikt_product.items():
-        all_product += price_d[1]
-    return f'всего продуктов {all_product} штук'
+def all_product_(product, quantity):  # функция для подсчета стоймости выбранного продукта
+    dikt_product[product][1] = dikt_product[product][1] - quantity  # обращение через ключь-продукт (первый аргуммент)
+    # к списку, обращаемся по индексу к нужномк элементу списка и присваеваем новое значение за вычетом количества
+    # продуктов (второй аргумент)
+    all_product = 0  # переменная для подсчета продуктов
+    for product_d, price_d in dikt_product.items():  # проходим циклом по словарю
+        # и извлекаем количество каждого продукта
+        all_product += price_d[1]  # добавляем количество каждого продукта в переменную
+    return f'всего продуктов {all_product} штук'  # возвращаем полученное значение
 
 
-work = "y"
-while work == "y":
-    for product_, price in dikt_product.items():
-        print(product_, price[0], price[1], sep="-")
-    Your_product = input('введите название товара >>>')
-    Your_quantity = int(input('введите количество товара >>>'))
-    print(my_basket(Your_product, Your_quantity))
-    for product_, price in dikt_product.items():
-        print(product_, price[0], price[1], sep="-")
-    print(all_product_(Your_product, Your_quantity))
-    work = input('если хотите выбрать что еще наберите "y" >>>')
-
-
-
+work = "y"  # переменная для работы цикла
+while work == "y":  # условие работы цикла
+    for product_, price in dikt_product.items():  # проходим циклом по словарю, получаем ключ
+        # и каждое значение списка через индекс для формирования информации о продуктах, ценах и количестве
+        print(product_, price[0], price[1], sep="-")  # вывод информации отработавшего цикла
+    Your_product = input('введите название товара >>>')  # переменная продукта
+    Your_quantity = int(input('введите количество товара >>>'))  # переменная количества продукта
+    print(my_basket(Your_product, Your_quantity))  # вывод стоймости покупки с помощью функции
+    for product_, price in dikt_product.items():  # проходим циклом по словарю, получаем ключ
+        # и каждое значение списка через индекс для формирования информации о продуктах, ценах и количестве
+        # после покупки
+        print(product_, price[0], price[1], sep="-")  # вывод информации отработавшего цикла
+    print(all_product_(Your_product, Your_quantity))  # общее количество оставшихся продуктов
+    work = input('если хотите выбрать что еще наберите "y" >>>')  # продолжение покупок при вводе значения "y"
