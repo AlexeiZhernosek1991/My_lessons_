@@ -6,11 +6,11 @@ def sss(n):
 print(sss(input()))
 
 
-
-
-def day_(d):
-    h = d * 24
-    m = h * 60
-    s = m * 60
+def sek_(s):
+    m = s / 60
+    h = m / 60
+    d = h / 24
     return f'дней: {d}, часов: {h}, минут: {m}, секунд: {s}'
-print(day_(10))
+
+
+print(sek_(1000000))
