@@ -133,6 +133,6 @@ def data(day, month, age):
     elif month == 4 or 9 or 6 or 11 and day == 30:
         print(f'{1}, {month}, {age}')
     elif day == 31:
-        print(f'{1}, {month+1}', {age})
-    else:
-        print(f'{day+1}, {month}, {age}')
+        print(f'{1}, {month + 1}', {age})
+    elif 0 < day < 32:
+        print(f'{day + 1}, {month}, {age}')
