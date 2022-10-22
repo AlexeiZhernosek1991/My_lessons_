@@ -30,12 +30,16 @@ list_in_list(list_8)
 
 # № 9
 
-def word_anagram(word1: str, word2: str):
-    print(word1[::-1] == word2)
+def word_anagram(b: str, a: str):
+    list_1 = list(b.upper())
+    list_ = list(a.upper())
+    list_.sort()
+    list_1.sort()
+    print(list_ == list_1)
 
 
 word_anagram('life', 'efil')
-word_anagram('life', 'ufo')
+word_anagram('life', 'ufoo')
 
 
 # № 6
@@ -206,11 +210,12 @@ def xxx(list_):
                 l_1.extend(i)
         list_ = l_1
         l_1 = []
-    for i in list_:
-        if type(i) is not list:
-            l_1.append(i)
-        elif type(i) is list:
-            l_1.extend(i)
+    else:
+        for i in list_:
+            if type(i) is not list:
+                l_1.append(i)
+            elif type(i) is list:
+                l_1.extend(i)
     list_ = l_1
     print(list_)
 
@@ -218,5 +223,3 @@ def xxx(list_):
 list_1 = [[1], [2, 3], [[4, 5], 6], [7, [8, [9]]]]
 
 xxx(list_1)
-
-

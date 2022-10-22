@@ -1,30 +1,27 @@
-def alingment(list_):
-    l_1 = []
-    while len(list_) < 9:
-        for i in list_:
-            if type(i) is not list:
-                l_1.append(i)
-            elif type(i) is list:
-                l_1.extend(i)
-        list_ = l_1
-        l_1 = []
+def list_6_(list_: list):
+    print(list_[::-1])
+    list_a = []
+    list_1 = []
     for i in list_:
-        if type(i) is not list:
-            l_1.append(i)
-        elif type(i) is list:
-            l_1.extend(i)
-    list_ = l_1
+        if type(i) == str:
+            list_a.append(i)
+        else:
+            list_1.append(i)
+    list_1.sort()
+    list_a.sort()
+    list_1.extend(list_a)
+    print(list_1)
+    print(list_[1:7])
+    list_.pop(4)
     print(list_)
+    print(set(list_))
+    list_new = []
+    for i in list_:
+        if type(i) == str:
+            list_new.append(i)
+    print(list_new)
 
 
-def alingment(s):
-    if s == []:
-        return s
-    elif type(s[0]) == list:
-        return (alingment(s[0]) + alingment(s[1:]))
-    return (s[:1] + alingment(s[1:]))
+list_ = [1, 6, 5, 3, 4, 'as', 'ef', 'w', 'a', 'w']
 
-
-list_1 = [[1], [2, 3], [[4, 5], 6], [7, [8, [9]]]]
-
-print(fff(list_1))
+list_6_(list_)
