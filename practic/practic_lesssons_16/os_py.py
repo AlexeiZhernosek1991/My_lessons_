@@ -26,6 +26,9 @@ def sort_file(dir_file, dir_sort, dict_dir):
                     break
                 else:
                     pass
+            else:
+                print(f' файл {file_} перемещен в папку other file')
+                shutil.move(dir_file + '\\' + file_, dir_sort + '\\' + 'other file')
     else:
         print('Нет новых файлов')
 
