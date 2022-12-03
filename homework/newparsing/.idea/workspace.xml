@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="5bd6ed46-bf0a-411a-b0d0-84785fc55578" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../../practic/Alex12345/User.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../practic/lessons_25_practic/111.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../practic/lessons_25_practic/file.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../practic/lessons_25_practic/lessons_25_104.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../practic/newbot/config.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../practic/newbot/keyboard.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../practic/newbot/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../practic/Alex12345/config.py" beforeDir="false" afterPath="$PROJECT_DIR$/../../practic/Alex12345/config.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../practic/Alex12345/keyboard.py" beforeDir="false" afterPath="$PROJECT_DIR$/../../practic/Alex12345/keyboard.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../practic/Alex12345/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/../../practic/Alex12345/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../practic/pars/parser 508 aicic/pars asyncion.py" beforeDir="false" afterPath="$PROJECT_DIR$/../../practic/pars/parser 508 aicic/pars asyncion.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../practic/pars/parser 508 aicic/pars.csv" beforeDir="false" afterPath="$PROJECT_DIR$/../../practic/pars/parser 508 aicic/pars.csv" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="ProjectId" id="2IEOiBBKxNLAII3GULYqJaYodMb" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true"
+  }
+}]]></component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="5bd6ed46-bf0a-411a-b0d0-84785fc55578" name="Changes" comment="" />
+      <created>1669743401099</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1669743401099</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>

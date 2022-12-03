@@ -1,4 +1,3 @@
-import requests
 from bs4 import BeautifulSoup
 import csv
 import time
@@ -10,7 +9,7 @@ list_car = []
 
 async def get_list(session, page):  # Функция выполняющая зосновную задачк парсинга
     url_ = f'https://cars.av.by/filter?brands[0][brand]' \
-           f'=989&brands[0][model]=2262&brands[0][generation]=2033&page={page}'  # URL-адрес для парсинга
+           f'=989&brands[0][model]=2262&brands[0][generation]=2033&page={page}&sort=2'  # URL-адрес для парсинга
     head = 'https://cars.av.by'  # Начальная строницв
     async with session.get(url=url_) as response:  # Передаем сессию-запрос в переменную response
         response_text = await response.text()  # Передаем в переменную текст HTML страницы
